@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+@import "variables.scss";
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: $fs-base;
+    font-weight: $fw-500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+// Mobile version
+
+main {
+    background-color: $clr-primary;
+    width: clamp(375px, 100vw, 1440px);
+    padding: 5em 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    & .card {
+        background-color: white;
+        max-width: 30ch;
+        border-radius: 20px;
+        overflow: hidden;
+
+        & .card-image img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        & .card-content {
+            padding: 2em 1.5em;
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+
+            & .card-header {
+                display: flex;
+                flex-direction: column;
+                gap: 1.2em;
+                text-align: center;
+
+                & h2 {
+                    font-size: 1.5em;
+                    line-height: 1.1;
+                    font-weight: $fw-900;
+                    color: $clr-dark-blue;
+                }
+
+                & p {
+                    line-height: 1.5;
+                    color: $clr-desaturated-blue;
+                }
+            }
+
+            & .card-body {
+                background-color: $clr-x-pale-blue;
+                display: flex;
+                align-items: center;
+                gap: 1.2em;
+                padding: 1em;
+                border-radius: 10px;
+
+
+                & .card-plan {
+                    display: flex;
+                    flex-direction: column;
+                    gap:.25em;
+                    font-size: .9em;
+
+                    & span:first-child {
+                        font-weight: $fw-900;
+                        color: $clr-dark-blue;
+                    }
+    
+                    & span:last-child {
+                        color: $clr-desaturated-blue;
+                    }  
+                }
+                
+                & a {
+                    text-decoration: underline;
+                    font-weight: $fw-900;
+                    margin-left: auto;
+                    font-size: .8em;
+                    color: $clr-secondary;
+
+                    &:hover {
+                        text-decoration: none;
+                        opacity: .7;
+                    }
+                }
+            }
+
+            & .card-footer {
+                display: flex;
+                flex-direction: column;
+                gap: .25em;
+
+                & .btn {
+                    text-align: center;
+                    padding: 1em;
+                    font-weight: $fw-700;
+                    border-radius: 10px;
+                    cursor: pointer;
+
+                    &.payment {
+                        color: white;
+                        background-color: $clr-secondary;
+                        box-shadow: 0 12px 15px rgba($clr-secondary, .25);
+
+                        &:hover {
+                            opacity: .7;
+                        }
+                    }
+
+                    &.cancel {
+                        color: $clr-desaturated-blue;
+
+                        &:hover {
+                            color: $clr-dark-blue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// Desktop version
+@media screen and (min-width: 600px) {
+    main {
+        background-image: url(../images/pattern-background-desktop.svg);
+    }
+}

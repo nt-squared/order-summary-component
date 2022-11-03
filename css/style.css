@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+main {
+  background-color: hsl(225deg, 100%, 94%);
+  width: clamp(375px, 100vw, 1440px);
+  padding: 5em 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+main .card {
+  background-color: white;
+  max-width: 30ch;
+  border-radius: 20px;
+  overflow: hidden;
+}
+main .card .card-image img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+main .card .card-content {
+  padding: 2em 1.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+main .card .card-content .card-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+  text-align: center;
+}
+main .card .card-content .card-header h2 {
+  font-size: 1.5em;
+  line-height: 1.1;
+  font-weight: 900;
+  color: hsl(223deg, 47%, 23%);
+}
+main .card .card-content .card-header p {
+  line-height: 1.5;
+  color: hsl(224deg, 23%, 55%);
+}
+main .card .card-content .card-body {
+  background-color: hsl(225deg, 100%, 98%);
+  display: flex;
+  align-items: center;
+  gap: 1.2em;
+  padding: 1em;
+  border-radius: 10px;
+}
+main .card .card-content .card-body .card-plan {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+  font-size: 0.9em;
+}
+main .card .card-content .card-body .card-plan span:first-child {
+  font-weight: 900;
+  color: hsl(223deg, 47%, 23%);
+}
+main .card .card-content .card-body .card-plan span:last-child {
+  color: hsl(224deg, 23%, 55%);
+}
+main .card .card-content .card-body a {
+  text-decoration: underline;
+  font-weight: 900;
+  margin-left: auto;
+  font-size: 0.8em;
+  color: hsl(245deg, 75%, 52%);
+}
+main .card .card-content .card-body a:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}
+main .card .card-content .card-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+}
+main .card .card-content .card-footer .btn {
+  text-align: center;
+  padding: 1em;
+  font-weight: 700;
+  border-radius: 10px;
+  cursor: pointer;
+}
+main .card .card-content .card-footer .btn.payment {
+  color: white;
+  background-color: hsl(245deg, 75%, 52%);
+  box-shadow: 0 12px 15px rgba(56, 41, 224, 0.25);
+}
+main .card .card-content .card-footer .btn.payment:hover {
+  opacity: 0.7;
+}
+main .card .card-content .card-footer .btn.cancel {
+  color: hsl(224deg, 23%, 55%);
+}
+main .card .card-content .card-footer .btn.cancel:hover {
+  color: hsl(223deg, 47%, 23%);
+}
+
+@media screen and (min-width: 600px) {
+  main {
+    background-image: url(../images/pattern-background-desktop.svg);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
