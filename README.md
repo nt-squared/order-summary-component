@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://www.frontendmentor.io/solutions/qr-code-component-jZhaU32FdO](https://www.frontendmentor.io/solutions/qr-code-component-jZhaU32FdO)
-- Live Site URL: [https://nt-squared.github.io/NFT-preview-card-component/](https://nt-squared.github.io/NFT-preview-card-component/)
+- Solution URL: [https://www.frontendmentor.io/solutions/order-summary-card-using-mobilefirst-workflow-dsDTXdBApa](https://www.frontendmentor.io/solutions/order-summary-card-using-mobilefirst-workflow-dsDTXdBApa)
+- Live Site URL: [https://nt-squared.github.io/order-summary-component/](https://nt-squared.github.io/order-summary-component/)
 
 ## My process
 
